@@ -24,7 +24,9 @@ git commit -m "we can describe"  //-m :message
 git remote add origin https://github.com/himasagar29-prog/git-learnings.git
 (above command refers git is adding the repository(origin) that will be coming from hub
 
-git push -u origin master   //master is default branch 
+git push -u origin master // the same command is used for initail setup
+
+git push //  this command is used for after initial setup 
 --------------------------------------------------------------------------------------------
 GITHUB .extensions files:
 ========================
