@@ -7,21 +7,27 @@ Git Architeture
 ================
 1)WORKING DIRECTORY: Means Our local directory
 2)STAGE: stage layer where we can share our files from working dir to here as step1
-3)Local Repository
-4)REMOTE REPOSITORY: github
-
+3)Local Repository: batch loading from staging (all files in stages will be come here after stage)
+4)REMOTE REPOSITORY:same as local repo(github)
+--------------------------------------------------------------------
 WORKING DIR is the place where we create our project files
 code.sql
 sample.txt
 
 now it will be moved to stage area(here we can send all at a time or send required file it might be individual)
 Note: Stage importance is explained above, we can do this simple functions, But while sending to local repo we can't send individual file from  pool, all pool items will go. to overcome this issue stage is used
-
+----------------------------------------------------------------------------------
 git add code.sql \\( this command is used to send file from working directory to stage area)
 
-git commit -m "we can describe"
+git commit -m "we can describe"  //-m :message
 
+git remote add origin https://github.com/himasagar29-prog/git-learnings.git
+(above command refers git is adding the repository(origin) that will be coming from hub
+
+git push -u origin master   //master is default branch 
+--------------------------------------------------------------------------------------------
 GITHUB .extensions files:
 ========================
 .gitignore : This folder/file in github is used for files we dont required tracking such files would placed here
 .readme file: this file contains info about the project 
+
