@@ -16,13 +16,34 @@ sample.txt
 
 now it will be moved to stage area(here we can send all at a time or send required file it might be individual)
 Note: Stage importance is explained above, we can do this simple functions, But while sending to local repo we can't send individual file from  pool, all pool items will go. to overcome this issue stage is used
-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 git add code.sql \\( this command is used to send file from working directory to stage area)
-error:E:\git learnings>git add test jobs.txt
-fatal: pathspec 'test' did not match any files
-solution: git add "test jobs.txt" //To fix this, you just need to wrap the file name in double quotes so the terminal knows it's a single entity.
 
+error:E:\git learnings>git add test jobs.txt
+
+fatal: pathspec 'test' did not match any files
+
+solution: git add "test jobs.txt" //To fix this, you just need to wrap the file name in double quotes so the terminal knows it's a single entity.
+--------------------------------------------------------------------------------------------------------------------------------------
 git commit -m "we can describe"  //-m :message( This command used to push files[Batch loading] from stage to local repository
+
+error:
+E:\git learnings>git push
+
+fatal: The current branch 'subbranch' has no upstream branch.
+
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin 'subbranch'
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+solution: 
+    git push --set-upstream origin 'subbranch' // we get this error when we dont specify the branch, when there is multiple branches in a repository.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 git remote add origin https://github.com/himasagar29-prog/git-learnings.git
 (above command refers git is adding the repository(origin) that will be coming from hub
@@ -30,6 +51,8 @@ git remote add origin https://github.com/himasagar29-prog/git-learnings.git
 git push -u origin master // the same command is used for initail setup
 
 git push //  this command is used for after initial setup 
+
+git checkout -b 'name of branch'
 --------------------------------------------------------------------------------------------
 GITHUB .extensions files:
 ========================
